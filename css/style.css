@@ -37,7 +37,7 @@ font-family: 'Open Sans', sans-serif;
 ==================================================*/
 #cover
 {
-    background-color:#fff;
+    background-color: #fff;
     color: white;
 }
 .fillpage {
@@ -764,6 +764,10 @@ fieldset {
         margin: 6px;
     }
     nav li a {
-        font-size: 8px;
+        font-size: 12px;
     }
+
+    nav ul {
+    padding: none;
+}
 }

@@ -59,8 +59,12 @@ nav li {
 
 nav li a {
     color:  rgba(255, 51, 85, .85);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.leftalign li a{
+  font-size: 150%;
 }
 .cta{
   display: inline-block;
@@ -150,6 +154,31 @@ display: -webkit-box;
 @media screen and ( max-width: 750px ){
     .mast{
         padding: 150px 10px;
+    }
+
+    header {
+      height: 40px;
+    }
+
+    nav ul.leftalign, nav ul {
+      padding: 4px;
+    }
+
+    .leftalign li a{
+      font-size: inherit;
+    }
+
+    .cta{
+      display: inline-block;
+      font-family: 'Quicksand', monospace;
+      border-color: #EE2761!important;
+      padding: 7px 20px;
+      border: 1px solid;
+      border-radius: 10px;
+      background-color: #EE2761;
+      color: #f8f8f8;
+      font-size: 100%;
+      margin-top: 0.67em;
     }
 }
 /* START GRID */
