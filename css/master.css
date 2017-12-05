@@ -10,6 +10,23 @@
   margin-top: 15px;
 }
 
+.big{
+  display: inline-block;
+  font-family: 'Quicksand', monospace;
+  border-color: #EE2761!important;
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #EE2761;
+  color: #f8f8f8;
+  font-size: 150%;
+  margin-top: 0.67em;
+}
+
+.big:hover {
+  background-color: #DD2761;
+}
+
 .dark {
   background-color: #f1f1f1;
 }
