@@ -6,9 +6,10 @@
   background-color: #fff;
 }
 
-.text {
-  margin-top: 15px;
+.dark {
+  background-color: #f1f1f1;
 }
+
 
 .big{
   display: inline-block;
@@ -27,9 +28,10 @@
   background-color: #DD2761;
 }
 
-.dark {
-  background-color: #f1f1f1;
+.text {
+  margin-top: 15px;
 }
+
 .lighttext {
   background-color: #fff;
 }
@@ -87,6 +89,10 @@ nav li a {
     font-size: 20px;
     font-weight: 700;
     font-family: Quicksand;
+}
+
+nav li a:hover {
+  color: #DD2761;
 }
 
 .leftalign li a{
