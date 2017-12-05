@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Open+Sans:300,400,700|Quicksand:300,400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Open+Sans:300,400,700|Quicksand:300,400,700');
 @import url("https://use.typekit.net/pme3yyf.css");
 
 
@@ -64,7 +64,8 @@ nav li {
 nav li a {
     color:  rgba(255, 51, 85, .85);
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: Quicksand;
 }
 
 .leftalign li a{
