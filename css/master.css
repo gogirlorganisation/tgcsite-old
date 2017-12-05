@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,400,700|Quicksand:300,400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Open+Sans:300,400,700|Quicksand:300,400');
 @import url("https://use.typekit.net/pme3yyf.css");
 
 
@@ -11,6 +11,10 @@
 }
 .lighttext {
   background-color: #fff;
+}
+
+::selection { 
+    background: ;
 }
 
 .display-2 {
@@ -85,21 +89,22 @@ nav li a {
   background-color: #DD2761;
 }
 section{
-  padding: 1.5%;
+  padding: 5%;
 }
 .row{
   padding: 30px 0;
 }
 section h2{
   margin-top: 0;
-  font-size: 250%!important;
+  font-size: 200%!important;
   font-weight: lighter;
-  font-family: 'Europa';
+  font-family: 'Ubuntu';
   font-weight: bold;
 }
 .imgContainer img{
   width: 100%;
   border-radius: 25px;
+  padding: 15px;
 }
 .mast{
   background-color: #444;
@@ -120,7 +125,7 @@ section h2{
 }
 section h3{
   font-size: 210%;
-  font-family: 'Europa';
+  font-family: 'Ubuntu';
 }
 .blog p{
   font-size: 120%!important;
@@ -179,6 +184,11 @@ display: -webkit-box;
       color: #f8f8f8;
       font-size: 100%;
       margin-top: 0.67em;
+    }
+
+    section p {
+      font-size: 100% !important;
+      font-family: 'Open Sans', sans-serif;
     }
 }
 /* START GRID */
@@ -239,7 +249,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-family: Europa;
+  font-family: Ubuntu;
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -477,6 +487,10 @@ hr {
   .container {
     width: 750px;
   }
+  section h2{
+  font-size: 250%!important;
+  font-family: 'Open Sans', sans-serif;
+}
 }
 @media (min-width: 992px) {
   .container {
@@ -1187,9 +1201,13 @@ hr {
 }
 // STOP GRID
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Europa', sans-serif;
 }
-section p{
-  font-size: 155%!important;
-  font-family: 'Open Sans', sans-serif;
+
+@media (min-width: 760px)
+{
+  section p{
+    font-size: 150%!important;
+    font-family: 'Europa', sans-serif;
+  }
 }
