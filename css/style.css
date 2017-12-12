@@ -1,8 +1,4 @@
-/*
-* Resume template
-* Created by : Ahmed Essa
-* website : www.ahmedessa.net
-*/
+
 
 
 /* Table of Content
@@ -32,6 +28,12 @@ font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
+.icon
+{
+    height: 20%;
+    width: 20%;
+    max-width: 100%;
+}
 
 /* typography
 ==================================================*/
