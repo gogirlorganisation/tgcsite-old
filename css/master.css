@@ -98,6 +98,7 @@ nav li a:hover {
 .leftalign li a{
   font-size: 150%;
 }
+
 .cta{
   display: inline-block;
   font-family: 'Quicksand', monospace;
@@ -125,6 +126,14 @@ section{
 section h2{
   margin-top: 0;
   font-size: 200%!important;
+  font-weight: lighter;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+}
+
+section h1{
+  margin-top: 0;
+  font-size: 250%!important;
   font-weight: lighter;
   font-family: 'Ubuntu';
   font-weight: bold;
@@ -519,6 +528,11 @@ hr {
   font-size: 250%!important;
   font-family: 'Open Sans', sans-serif;
 }
+
+  section h1{
+    font-size: 350%!important;
+    font-family: 'Ubuntu', sans-serif;
+  }
 }
 @media (min-width: 992px) {
   .container {
