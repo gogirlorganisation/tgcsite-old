@@ -1,0 +1,239 @@
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
+
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #d9edf7;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ee2761;
+    border-radius: 2px;
+}
+
+.bounce {
+    width: 10px;
+    height: auto;
+    position:absolute;
+    left:50%;
+    margin-bottom: 20px;
+    bottom:0;
+    margin-left:-25px;
+    height:35px;
+    width:35px;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+    
+  }
+  
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+
+#cover
+{
+    background-color: #fff;
+    color: white;
+}
+
+.fillpage {
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div .row {
+    padding: 5% 0;
+}
+.bnw {
+    filter: brightness(80%);
+}
+
+.heading {
+    font-family: 'Ubuntu';
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.alexa {
+    padding-top: 10%;
+}
+
+@media only screen and (min-width:1200px) {
+
+    .eve {
+        height: 400px;
+        width: auto;
+        float: right;
+    }
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes wink {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes wink {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+a:focus {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.active {
+    color: #588EEC;
+}
+
+
+/* Responsive media queries
+==================================================*/
+
+@media (max-width: 350px)
+{
+    .eve {
+        height: 200px; 
+        width: auto;
+        vertical-align: middle; 
+    }
+
+    .girllogo {
+        width: 25px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .heading {
+        font-family: 'Europa';
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        color: #ddd;
+        align-content: center;
+    }
+
+    .girllogo {
+        width: 30px;
+    }
+}
+
+@media (min-width: 500px)
+{
+    .girllogo {
+        width: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    nav li {
+        margin: 6px;
+    }
+    nav li a {
+        font-size: 12px;
+    }
+
+    nav ul {
+        padding: none;
+    }
+}
+.nav-links{
+    position: relative;
+}
+.nav-links:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 51, 85, .85);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.nav-links:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+#learn-more{
+    background-color:inherit;
+    color:  rgba(255, 51, 85, .85);
+    transition: all 200ms ease-in-out;
+}
+#learn-more:hover{
+    background-color: rgba(255, 51, 85, .85);
+    color: #fff;
+}
