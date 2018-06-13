@@ -1,0 +1,374 @@
+body, html {
+  font-family: Europa;
+  margin: 0px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+::-moz-selection { background-color: rgba(255, 51, 85, .45); }
+::selection { background-color: rgba(255, 51, 85, .45); }
+
+a {
+  text-decoration: none;
+  color: #fb7f9f;
+}
+
+div .nav {
+  height: 3rem;
+  position: fixed;
+  background: #ffffffec;
+  top: 0;
+  line-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  top: 0;
+  left: 20px;
+}
+
+div .nav > a {
+  padding: 0 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0px;
+}
+body .hidden {
+  visibility: hidden;
+  display: none;
+}
+
+form.compiler {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div.coding {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: calc(100% - 420px);
+}
+
+div.coding form  textarea[name=code] {
+  min-height: 50vh;
+  width: 450%;
+}
+
+input {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 2.5px;
+}
+
+textarea[name=code] {
+  font-family: monospace;
+  height: 250px !important;
+  min-width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.CodeMirror {
+  text-align: left;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.output-container {
+  flex: 1;
+  display: flex;
+}
+
+.output-container pre {
+  max-width: 50%;
+  margin: 0.5rem 0.25rem;
+  background: white;
+  position: relative;
+  text-align: left;
+  padding: 0.75rem;
+  flex: 1;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+code.stdout, code.stderr {
+    display: block;
+    overflow-x: auto;
+    flex: 1;
+}
+
+.output-container pre:before {
+  content: attr(data-heading);
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  box-shadow: 0 0 0.2rem rgba(0,0,0,0.2);
+  padding: 0.25rem 0.5rem;
+  background: rgba(255,255,255,0.8);
+}
+
+/*[ login ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.question {
+  width: 420px;
+  background: #fff;
+  border-radius: 10px;
+  overflow-x: hidden;
+  padding: 25px 30px;
+  box-shadow: 0 10px 35px 0px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+
+/*[ Form ]*/
+
+.formlogin {
+  width: 100%;
+}
+
+h1, h2 {
+  display: block;
+  font-size: 42px;
+  color: #333333;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+form p {
+  line-height: 1.5;
+}
+
+input.stdin {
+    text-align: left;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+/*[ Input ]*/
+
+.inputtype {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.an-input {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  padding: 0 5px;
+}
+
+.focus-an-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-an-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: linear-gradient(-30deg, #f37 10%, #ff334485 90%);
+}
+
+.focus-an-input::after {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.2;
+
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  padding-left: 5px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.an-input:focus + .focus-an-input::after {
+  top: -15px;
+}
+
+.an-input:focus + .focus-an-input::before {
+  width: 100%;
+}
+
+.hasvalue.an-input + .focus-an-input::after {
+  top: -15px;
+}
+
+.hasvalue.an-input + .focus-an-input::before {
+  width: 100%;
+}
+
+
+/*[ Button ]*/
+.formbutton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.form-in-button {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.bgbutton {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(-30deg, #f37 10%, #ff334485 90%);
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.loginbutton {
+  color: #fff;
+  font-family: Europa;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.form-in-button:hover .bgbutton {
+  left: 0;
+}
+
+
+img.hidden {
+  display: none;
+}
+
+.eve-container {
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  top: 50px;
+  left: 55%;
+  max-width: 45%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 0.33rem;
+  filter: drop-shadow(0.1rem 0.15rem 0.2rem rgba(0,0,0,0.2));
+  background: white;
+}
+
+.bubble:before {
+  position: absolute;
+  bottom: -0.45rem;
+  left: 0;
+  border: 0.5rem solid white;
+  content: '';
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+/*[ Responsive ]*/
+
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 25px 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
