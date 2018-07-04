@@ -44,9 +44,59 @@ section.mast.workshops-mast div.container h1 {
   border-radius: 1rem;
 }
 
+.card {
+  background: white;
+  margin-bottom: 2em;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+  background-color: #fff;
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card a:hover {
+  background-color: #fff;
+  transform: translate(0, -20px);
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.16);
+}
+
+.card-content {
+  padding: 1.4em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
+.card-content p {
+  font-size: 95%;
+  background-color: #fff;
+}
+
 img {
   width: 100%;
   height: auto;
+}
+
+.submenu {
+  position: absolute;
+  top: 5rem;
+  right: calc(50% - 512px);
+  background: #ffffffdd;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.submenu.visible {
+  pointer-events: all;
+  opacity: 1;
 }
 
 .workshops article.card,
@@ -144,4 +194,4 @@ img {
 }
 /* mq 60em*/
 
-/*# sourceMappingURL=css/sub-pages.css.map */
+/*# sourceMappingURL=css/subpages.css.map */
