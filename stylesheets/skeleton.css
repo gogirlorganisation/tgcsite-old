@@ -359,8 +359,9 @@ header > div {
 }
 
 header > div .logo img {
-  height: 2.5rem;
-  margin: 1rem;
+  height: 2.5rem !important;
+  margin: 1rem !important;
+  width: auto !important;
 }
 
 header > div nav {
