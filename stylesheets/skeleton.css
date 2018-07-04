@@ -419,6 +419,10 @@ footer div .table-cell-center {
   margin: auto;
   top: 50%;
 }
+
+.center {
+  text-align: center;
+}
 footer .do img {
   width: 70%;
   height: auto;
