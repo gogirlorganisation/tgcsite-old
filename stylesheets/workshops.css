@@ -1,0 +1,139 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  display: block; }
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
+
+.workshops article.card,
+.workshops article.card > * {
+  position: relative; }
+
+.workshops article.card img {
+  display: block;
+  transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1); }
+
+.workshops article.card:hover img {
+  transform: scale(1.05); }
+
+.workshops article.card .workshop-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 150ms cubic-bezier(0.02, 0.01, 0.47, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1.25rem;
+  box-sizing: border-box; }
+
+.workshops article.card a {
+  box-shadow: none; }
+
+.workshops article.card a:hover {
+  transform: none; }
+
+.workshops article.card a:hover figure {
+  filter: brightness(200%); }
+
+.workshops article.card:hover .workshop-info {
+  background: rgba(0, 0, 0, 0.35); }
+
+.workshops article.card {
+  text-align: center;
+  overflow: hidden; }
+
+.workshops article.card figure {
+  overflow: hidden; }
+
+.workshops article.card h3 {
+  font-size: 2rem;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  margin-bottom: 0.5rem;
+  font-weight: normal; }
+
+.workshops article.card .date {
+  font-size: 1.33rem; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.container,
+.row {
+  zoom: 1; }
+
+.container:before,
+.row:before, .container:after,
+.row:after {
+  content: " ";
+  display: table; }
+
+.container:after,
+.row:after {
+  clear: both; }
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px; }
+
+@media only screen and (min-width: 30em) {
+  .container {
+    width: 95%;
+    max-width: 70em; }
+
+  .column-1 {
+    width: 8.33333%; }
+
+  .column-2 {
+    width: 16.66667%; }
+
+  .column-3 {
+    width: 25%; }
+
+  .column-4 {
+    width: 33.33333%; }
+
+  .column-5 {
+    width: 41.66667%; }
+
+  .column-6 {
+    width: 50%; }
+
+  .column-7 {
+    width: 58.33333%; }
+
+  .column-8 {
+    width: 66.66667%; }
+
+  .column-9 {
+    width: 75%; }
+
+  .column-10 {
+    width: 83.33333%; }
+
+  .column-11 {
+    width: 91.66667%; }
+
+  .column-12 {
+    width: 100%; } }
+
+/*# sourceMappingURL=workshops.css.map */
