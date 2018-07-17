@@ -223,8 +223,8 @@ header > div {
 }
 
 header > div .logo img {
-    height: 2.5rem;
-    margin: 1rem;
+    height: 2.5rem !important;
+    margin: 1.25rem;
 }
 
 header > div nav {
@@ -365,7 +365,7 @@ div {
     }
 
     header > div .logo img {
-        height: 1.5rem;
+        height: 1.5rem !important;
         margin-top: 1.75rem;
     }
 
@@ -378,8 +378,132 @@ div {
         font-size: 2.2rem;
         margin-top: 3rem;
     }
+
+    div .submenu {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 95%;
+        max-width: 20rem;
+        background: rgba(0,0,0,0.03);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.2s ease-in-out;
+
+        &.visible {
+            transform: scaleY(1);
+        }
+    }
+
+    header {
+        box-shadow: 0 0 0.7rem rgba(0,0,0,0.05);
+
+        .me {
+            z-index: 3;
+        }
+
+        .logo {
+            display: flex;
+            width: 10rem;
+        }
+
+        .hamburger-container {
+            height: 5rem;
+            width: 5rem;
+            cursor: pointer;
+            position: relative;
+            display: block;
+
+            .hamburger-button {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 2rem;
+                height: 2px;
+                background: #333;
+                transition: all 0.2s ease-in-out;
+
+                &:before, &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    background: #333;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &:before {
+                    top: -6px;
+                }
+
+                &:after {
+                    bottom: -6px;
+                }
+            }
+
+            &.close {
+                .hamburger-button {
+                    background: transparent;
+                    transform: scale(0.66);
+
+                    &:before {
+                        top: -1rem;
+                        transform: rotate(45deg);
+                        transform-origin: left bottom;
+                    }
+
+                    &:after {
+                        bottom: -0.5rem;
+                        transform: rotate(-45deg);
+                        transform-origin: left top;
+                    }
+                }
+            }
+        }
+
+        > div nav {
+            position: fixed;
+            top: 5rem;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+            height: calc(100% - 5rem);
+            background: rgba(0,0,0,0.2);
+            flex-direction: column;
+            transition: all 0.2s ease-in-out;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 95%;
+                background: rgba(255, 255, 255, 0.85);
+                max-width: 20rem;
+                transition: all 0.2s ease-in-out;
+            }
+
+            a {
+                width: 95%;
+                max-width: 20rem;
+                padding: 0 2rem;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:not(.active) {
+                background: transparent;
+                pointer-events: none;
+
+                &:before, a {
+                    transform: translateX(-20rem);
+                }
+            }
+
+        }
+    }
 }
-
-
-
-

@@ -18,4 +18,21 @@ $('.submenu').on('mouseenter', function() {
 $('.submenu').on('mouseleave', function() {
 	stay = false;
 	$(this).removeClass('visible');
-})
+});
+
+$('.hamburger-container').on('click', function() {
+	$(this).toggleClass('close');
+	$('header > div nav').toggleClass('active');
+});
+
+$('header nav').on('click', function() {
+	if($(window).width() < 1024) {
+		$('.hamburger-container').click();
+	}
+});
+
+$('header nav a').on('click', function(e) {
+	if($(window).width() < 1024) {
+		e.stopPropagation();
+	}
+});
