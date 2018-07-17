@@ -95,45 +95,30 @@ img {
   width: 100%;
   min-height: 1px; }
 
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: 1024px) {
   .container {
     width: 95%;
     max-width: 70em; }
 
-  .column-1 {
-    width: 8.33333%; }
-
-  .column-2 {
-    width: 16.66667%; }
-
-  .column-3 {
-    width: 25%; }
-
   .column-4 {
-    width: 33.33333%; }
+    width: 33.33333%; } }
+@media only screen and (max-width: 1023px) {
+  .workshops article.card {
+    max-width: 30rem;
+    margin: auto;
+    float: none; }
 
-  .column-5 {
-    width: 41.66667%; }
+  .workshops article.card a {
+    display: block;
+    width: 100%; }
 
-  .column-6 {
-    width: 50%; }
+  .workshops article.card img {
+    width: 100%; }
 
-  .column-7 {
-    width: 58.33333%; }
+  .workshops article.card h3 {
+    font-size: 1.5rem; }
 
-  .column-8 {
-    width: 66.66667%; }
-
-  .column-9 {
-    width: 75%; }
-
-  .column-10 {
-    width: 83.33333%; }
-
-  .column-11 {
-    width: 91.66667%; }
-
-  .column-12 {
-    width: 100%; } }
+  .workshops article.card .date {
+    font-size: 1.1rem; } }
 
 /*# sourceMappingURL=workshops.css.map */
