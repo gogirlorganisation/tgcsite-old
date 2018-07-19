@@ -329,7 +329,7 @@ div {
         opacity: 0;
         pointer-events: none;
 
-        .visible {
+        &.visible {
             pointer-events: all;
             opacity: 1;
         }

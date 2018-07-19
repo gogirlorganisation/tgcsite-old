@@ -371,7 +371,7 @@ div .submenu {
   flex-direction: column;
   opacity: 0;
   pointer-events: none; }
-  div .submenu .visible {
+  div .submenu.visible {
     pointer-events: all;
     opacity: 1; }
 
