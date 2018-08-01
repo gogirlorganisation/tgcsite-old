@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  background: #fff;
+}
+
+header {
+  color: #f37;
+  background: #ffffffc7;
+  border-bottom: 1px solid #eee;
+}
+
+section {
+  padding: 6em 0 0 0;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+
+section.intro div.container h4.title {
+  margin-top: 2% !important;
+}
+section.intro div.container h6.date {
+  font-weight: 300;
+  margin-top: -10px;
+}
+section.intro div.container p.intro {
+  margin: 25px 0;
+  font-size: 20px;
+  width: 50%;
+}
+
+/*# sourceMappingURL=css/workshop.css.map */
