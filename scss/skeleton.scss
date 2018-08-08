@@ -285,6 +285,14 @@ footer {
             text-align: center;
             margin: auto;
             top: 50%;
+
+            &:nth-child(1) {
+                text-align: left;
+
+                > * {
+                    max-width: 35rem;
+                }
+            }
         }
     }
 
@@ -300,6 +308,7 @@ footer {
         a {
             color: rgba(255,255,255,0.66);
             border-bottom: 2px solid rgba(255,255,255,0.2);
+            text-decoration: none;
 
             &:hover {
                 color: rgba(255,255,255,0.8);
