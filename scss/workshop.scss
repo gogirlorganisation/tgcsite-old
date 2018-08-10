@@ -2,6 +2,9 @@ body{
 	width: 100%;	
   background: #fff;
 }
+p {
+	font-size: 20px;
+}
 header {
   color: #f37;
   background: #ffffffc7;
@@ -31,6 +34,7 @@ img {
 section.intro
 {
 	div.container {
+		margin-top: 5%;
 		h4.title {
 			margin-top: 2% !important;
 		}
@@ -38,12 +42,79 @@ section.intro
 		h6.date {
 			font-weight: 300;
 			margin-top: -10px;
+			opacity: 0.5;
 		}
 
 		p.intro {
 			margin: 25px 0;
-			font-size: 20px;
-			width: 50%;
+			opacity: 0.5;
+		}
+		div.intro {
+			img {
+				display: block;
+			    margin: auto;
+			    margin-top: auto;
+			}
+			margin-bottom: 5%;
+		}
+
+		div.maincontent {
+			width: 80%;
+			display: block;
+			margin: auto;
+
+			span.first {
+				display: block;
+			    position: relative;
+			    float: left;
+			    --x-height-multiplier: 0.342;
+    			--baseline-multiplier: 0.12;
+    			font-weight: 500!important;
+			    font-size: 56px;
+			    padding-right: 7px;
+			}
+		}
+
+		img.fullwidth {
+			width: 100%;
+			margin: 5% 0;
 		}
 	}
 }
+
+blockquote {
+	font-size: 1.4em;
+	width:80%;
+	margin:50px auto;
+	font-family:Open Sans;
+	font-style:italic;
+	color: #555555;
+	padding:1.2em 30px 1.2em 75px;
+	border-left:8px solid #d63550d9 ;
+	line-height:1.6;
+	position: relative;
+	background:#EDEDED;
+
+	&::before {
+		font-family:Arial;
+		content: "\201C";
+		color:#d63550d9;
+		font-size:4em;
+		position: absolute;
+		left: 10px;
+		top:-10px;
+	}
+
+	&::after{
+		content: '';
+	}
+
+	span{
+		display:block;
+		color:#333333;
+		font-style: normal;
+		font-weight: bold;
+		margin-top:1em;
+	}
+}
+

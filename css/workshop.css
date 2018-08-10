@@ -1,6 +1,11 @@
+@charset "UTF-8";
 body {
   width: 100%;
   background: #fff;
+}
+
+p {
+  font-size: 20px;
 }
 
 header {
@@ -30,17 +35,99 @@ img {
   height: auto !important;
 }
 
+section.intro div.container {
+  margin-top: 5%;
+}
 section.intro div.container h4.title {
   margin-top: 2% !important;
 }
 section.intro div.container h6.date {
   font-weight: 300;
   margin-top: -10px;
+  opacity: 0.5;
 }
 section.intro div.container p.intro {
   margin: 25px 0;
-  font-size: 20px;
-  width: 50%;
+  opacity: 0.5;
+}
+section.intro div.container div.intro {
+  margin-bottom: 5%;
+}
+section.intro div.container div.intro img {
+  display: block;
+  margin: auto;
+  margin-top: auto;
+}
+section.intro div.container div.maincontent {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+section.intro div.container div.maincontent span.first {
+  display: block;
+  position: relative;
+  float: left;
+  --x-height-multiplier: 0.342;
+  --baseline-multiplier: 0.12;
+  font-weight: 500 !important;
+  font-size: 56px;
+  padding-right: 7px;
+}
+section.intro div.container img.fullwidth {
+  width: 100%;
+  margin: 5% 0;
+}
+
+blockquote {
+  font-size: 1.4em;
+  width: 80%;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #d63550d9;
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+}
+blockquote::before {
+  font-family: Arial;
+  content: "“";
+  color: #d63550d9;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+blockquote::after {
+  content: "";
+}
+blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+hr.section-divider:before {
+  --x-height-multiplier: 0.342;
+  --baseline-multiplier: 0.22;
+  font-family: medium-content-slab-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  letter-spacing: 0.6em;
+}
+
+hr.section-divider:before {
+  content: "...";
+  display: inline-block;
+  margin-left: 0.6em;
+  color: rgba(0, 0, 0, 0.68);
+  position: relative;
+  top: -30px;
 }
 
 /*# sourceMappingURL=css/workshop.css.map */

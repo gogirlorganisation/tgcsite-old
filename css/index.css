@@ -328,7 +328,8 @@ section.what-we-do {
   padding: 3rem 0;
 }
 section.what-we-do img {
-  width: 100%;
+  width: 60%;
+  margin: 20% 20% 3rem;
 }
 section.what-we-do h4 {
   font-size: 2rem;
