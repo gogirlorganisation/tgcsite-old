@@ -18,6 +18,11 @@ img {
   height: auto !important;
 }
 
+.cards.workshops .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .workshops article.card,
 .workshops article.card > * {
   position: relative;
