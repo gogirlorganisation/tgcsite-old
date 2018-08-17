@@ -1,3 +1,7 @@
+html, body {
+  width: 100%;
+}
+
 section.description {
   background: white;
   padding: 10rem 0 5rem;
@@ -369,4 +373,4 @@ article.card.column-6.table {
   }
 }
 
-/*# sourceMappingURL=css/about.css.map */
+/*# sourceMappingURL=about.css.map */
