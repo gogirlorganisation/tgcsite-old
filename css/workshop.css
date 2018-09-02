@@ -1,133 +1,95 @@
 @charset "UTF-8";
 body {
-  width: 100%;
-  background: #fff;
-}
-
-p {
-  font-size: 20px;
-}
+  width: 100%; }
 
 header {
-  color: #f37;
-  background: #ffffffc7;
-  border-bottom: 1px solid #eee;
-}
+  border-bottom: 1px solid #ddd; }
 
 section {
-  padding: 6em 0 0 0;
   width: 100%;
-}
+  height: auto; }
+  section#group {
+    height: 70vh;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px solid #ddd; }
+    section#group div.container div.row div.columns {
+      padding-top: 1%;
+      position: absolute;
+      margin: auto;
+      top: 30vh;
+      left: 0;
+      color: #000; }
+      section#group div.container div.row div.columns h3 {
+        margin-bottom: 3px;
+        font-weight: 600; }
+      section#group div.container div.row div.columns p {
+        margin-top: 0;
+        color: #aaa;
+        font-weight: 300; }
+        section#group div.container div.row div.columns p.date {
+          font-size: 150%; }
+    section#group div.container div.row div.picture {
+      float: right;
+      position: relative;
+      margin-top: -12vh; }
+      section#group div.container div.row div.picture img {
+        width: 100%;
+        height: auto; }
+  section#content div.container div.row div.columns {
+    font-size: 150%; }
+    section#content div.container div.row div.columns img {
+      width: 70%;
+      height: auto; }
+    section#content div.container div.row div.columns p.v_cent {
+      margin-top: 10vh; }
+  section#fancy {
+    background: rgba(255, 51, 85, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 5% 0; }
+    section#fancy div.row {
+      margin: 0 auto; }
+      section#fancy div.row div.columns {
+        margin-left: 1%;
+        padding-right: 1%; }
+        section#fancy div.row div.columns h4 {
+          font-weight: 300; }
+      section#fancy div.row div.first {
+        margin-left: 4%;
+        border-right: 1px solid #fff; }
+      section#fancy div.row div.fix {
+        border-right: 1px solid #fff; }
+  section#feedback {
+    background: #ededed; }
+    section#feedback div.container div.row {
+      margin: 10px auto; }
+      section#feedback div.container div.row div.columns blockquote {
+        font-size: 1.4em;
+        width: 80%;
+        margin: 0 auto;
+        font-family: Open Sans;
+        font-style: italic;
+        color: #555555;
+        padding: 1.2em 30px 1.5em 75px;
+        border-left: 8px solid #d63550d9;
+        line-height: 1.6;
+        position: relative;
+        background: #f7f7f7;
+        height: auto; }
+        section#feedback div.container div.row div.columns blockquote::before {
+          font-family: Arial;
+          content: "“";
+          color: #d63550d9;
+          font-size: 4em;
+          position: absolute;
+          left: 10px;
+          top: -10px; }
+        section#feedback div.container div.row div.columns blockquote span {
+          color: #333333;
+          font-style: normal;
+          font-weight: bold;
+          margin-top: 1.5em;
+          float: right; }
 
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto !important;
-}
-
-section.intro div.container {
-  margin-top: 5%;
-}
-section.intro div.container h4.title {
-  margin-top: 2% !important;
-}
-section.intro div.container h6.date {
-  font-weight: 300;
-  margin-top: -10px;
-  opacity: 0.5;
-}
-section.intro div.container p.intro {
-  margin: 25px 0;
-  opacity: 0.5;
-}
-section.intro div.container div.intro {
-  margin-bottom: 5%;
-}
-section.intro div.container div.intro img {
-  display: block;
-  margin: auto;
-  margin-top: auto;
-}
-section.intro div.container div.maincontent {
-  width: 80%;
-  display: block;
-  margin: auto;
-}
-section.intro div.container div.maincontent span.first {
-  display: block;
-  position: relative;
-  float: left;
-  --x-height-multiplier: 0.342;
-  --baseline-multiplier: 0.12;
-  font-weight: 500 !important;
-  font-size: 56px;
-  padding-right: 7px;
-}
-section.intro div.container img.fullwidth {
-  width: 100%;
-  margin: 5% 0;
-}
-
-blockquote {
-  font-size: 1.4em;
-  width: 80%;
-  margin: 50px auto;
-  font-family: Open Sans;
-  font-style: italic;
-  color: #555555;
-  padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #d63550d9;
-  line-height: 1.6;
-  position: relative;
-  background: #EDEDED;
-}
-blockquote::before {
-  font-family: Arial;
-  content: "“";
-  color: #d63550d9;
-  font-size: 4em;
-  position: absolute;
-  left: 10px;
-  top: -10px;
-}
-blockquote::after {
-  content: "";
-}
-blockquote span {
-  display: block;
-  color: #333333;
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 1em;
-}
-
-hr.section-divider:before {
-  --x-height-multiplier: 0.342;
-  --baseline-multiplier: 0.22;
-  font-family: medium-content-slab-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 30px;
-  letter-spacing: 0.6em;
-}
-
-hr.section-divider:before {
-  content: "...";
-  display: inline-block;
-  margin-left: 0.6em;
-  color: rgba(0, 0, 0, 0.68);
-  position: relative;
-  top: -30px;
-}
-
-/*# sourceMappingURL=css/workshop.css.map */
+/*# sourceMappingURL=workshop.css.map */
