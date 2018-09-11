@@ -1,5 +1,95 @@
-section#group img {
+@charset "UTF-8";
+body {
+  width: 100%; }
+
+header {
+  border-bottom: 1px solid #ddd; }
+
+section {
   width: 100%;
   height: auto; }
+  section#group {
+    height: 70vh;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px solid #ddd; }
+    section#group div.container div.row div.columns {
+      padding-top: 1%;
+      position: absolute;
+      margin: auto;
+      top: 30vh;
+      left: 0;
+      color: #000; }
+      section#group div.container div.row div.columns h3 {
+        margin-bottom: 3px;
+        font-weight: 600; }
+      section#group div.container div.row div.columns p {
+        margin-top: 0;
+        color: #aaa;
+        font-weight: 300; }
+        section#group div.container div.row div.columns p.date {
+          font-size: 150%; }
+    section#group div.container div.row div.picture {
+      float: right;
+      position: relative;
+      margin-top: -12vh; }
+      section#group div.container div.row div.picture img {
+        width: 100%;
+        height: auto; }
+  section#content div.container div.row div.columns {
+    font-size: 150%; }
+    section#content div.container div.row div.columns img {
+      width: 70%;
+      height: auto; }
+    section#content div.container div.row div.columns p.v_cent {
+      margin-top: 10vh; }
+  section#fancy {
+    background: rgba(255, 51, 85, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 5% 0; }
+    section#fancy div.row {
+      margin: 0 auto; }
+      section#fancy div.row div.columns {
+        margin-left: 1%;
+        padding-right: 1%; }
+        section#fancy div.row div.columns h4 {
+          font-weight: 300; }
+      section#fancy div.row div.first {
+        margin-left: 4%;
+        border-right: 1px solid #fff; }
+      section#fancy div.row div.fix {
+        border-right: 1px solid #fff; }
+  section#feedback {
+    background: #ededed; }
+    section#feedback div.container div.row {
+      margin: 10px auto; }
+      section#feedback div.container div.row div.columns blockquote {
+        font-size: 1.4em;
+        width: 80%;
+        margin: 0 auto;
+        font-family: Open Sans;
+        font-style: italic;
+        color: #555555;
+        padding: 1.2em 30px 1.5em 75px;
+        border-left: 8px solid #d63550d9;
+        line-height: 1.6;
+        position: relative;
+        background: #f7f7f7;
+        height: auto; }
+        section#feedback div.container div.row div.columns blockquote::before {
+          font-family: Arial;
+          content: "“";
+          color: #d63550d9;
+          font-size: 4em;
+          position: absolute;
+          left: 10px;
+          top: -10px; }
+        section#feedback div.container div.row div.columns blockquote span {
+          color: #333333;
+          font-style: normal;
+          font-weight: bold;
+          margin-top: 1.5em;
+          float: right; }
 
 /*# sourceMappingURL=workshop.css.map */
