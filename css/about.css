@@ -9,7 +9,26 @@ section.timeline {
   background: #ff115199;
   color: white;
   padding-bottom: 6em; }
+section.cards {
+  background: #fafafa; }
 
+@media (max-width: 480px) {
+  article img {
+    border-radius: 50%;
+    margin-top: 0 !important;
+    margin-left: 0 !important; }
+
+  .desc-box.column-4 {
+    width: 100% !important; }
+  .desc-box:first-of-type {
+    margin-left: 0 !important; }
+  .desc-box:last-of-type {
+    margin-right: 0 !important; }
+
+  .big-quote blockquote {
+    font-size: 1.5rem !important; }
+  .big-quote cite {
+    font-size: 1rem !important; } }
 .big-quote blockquote {
   font-size: 2.6rem;
   font-weight: lighter;
@@ -160,14 +179,6 @@ img {
   width: 90%;
   margin: 0 auto; }
 
-@media (max-width: 480px) {
-  article img {
-    border-radius: 50%;
-    margin-top: 0 !important;
-    margin-left: 0 !important; }
-
-  .desc-box.column-4 {
-    width: 100% !important; } }
 [class*='column-'] {
   float: left;
   padding: 1em;
@@ -175,11 +186,11 @@ img {
   min-height: 1px; }
 
 .card {
-  background: white;
   margin-bottom: 2em; }
 
 .card a {
   color: black;
+  border-radius: 15px;
   text-decoration: none;
   background-color: #fff;
   transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -199,8 +210,7 @@ img {
   font-weight: normal; }
 
 .card-content p {
-  font-size: 95%;
-  background-color: #fff; }
+  font-size: 95%; }
 
 @media only screen and (min-width: 30em) {
   .container {
@@ -251,7 +261,7 @@ img {
 
 article img {
   border-radius: 50%;
-  margin-top: 20%;
+  margin-top: 30%;
   margin-left: 10%; }
 
 .card-content h2 {
