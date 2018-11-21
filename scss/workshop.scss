@@ -203,19 +203,20 @@ section {
 	}
 
 	&.slideshow {
+		width: 90%;
 		margin: 6vh 0;
 	}
 }
 
 * {box-sizing: border-box}
-.mySlides {display: none}
+.mySlides {display: none; margin: 0 auto !important;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 80%;
+  margin-left: 20%;
   position: relative;
-  margin: auto;
 }
 
 /* Next & previous buttons */
@@ -224,9 +225,8 @@ img {vertical-align: middle;}
     position: absolute;
     top: 50%;
     width: auto;
-    margin: -22px 35px;
+    margin: -22px 50px;
     color: #fff;
-    opacity: 0.8;
     font-weight: bold;
     font-size: 42px;
     transition: 1.6s ease;
