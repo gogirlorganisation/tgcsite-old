@@ -121,28 +121,23 @@ blockquote, dd, div, dl, dt, form, li, ol, p, pre, td, th, ul {
 a {
   text-decoration: none;
 }
-a .button {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid white;
-  margin: 0 0.5rem;
-  border-radius: 0.3rem;
-  transition: all 0.2s ease-in-out;
-}
-a .hero-button {
+
+a.button {
   color: #EE2761;
   padding: 0.66rem 1.75rem;
   border: 1px solid;
   border-color: #EE2761;
-  margin: 0.25rem;
+  margin: 1.25rem 0.25rem 0.25rem;
   display: inline-block;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
-a .hero-button .highlight {
+a.button:hover, a.button.highlight {
   color: white;
   background: #EE2761;
+  transition: all 0.1s ease-in-out;
+}
+a.button:first-of-type {
+  margin-left: 0;
 }
 
 .header-bottom {
@@ -397,4 +392,4 @@ section.what-we-do h4 {
   }
 }
 
-/*# sourceMappingURL=css/index.css.map */
+/*# sourceMappingURL=index.css.map */

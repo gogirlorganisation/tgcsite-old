@@ -1,115 +1,180 @@
 @charset "UTF-8";
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
 
 header {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+}
 
 section {
   width: 100%;
-  height: auto; }
-  section#game iframe {
-    width: 100%;
-    height: auto; }
-  section#group {
-    height: 70vh;
-    margin: 0;
-    position: relative;
-    border-bottom: 1px solid #ddd; }
-    section#group div.container div.row div.columns {
-      padding-top: 1%;
-      position: absolute;
-      margin: auto;
-      top: 30vh;
-      left: 0;
-      color: #000; }
-      section#group div.container div.row div.columns h3 {
-        margin-bottom: 3px;
-        font-weight: 600; }
-      section#group div.container div.row div.columns p {
-        margin-top: 0;
-        color: #aaa; }
-        section#group div.container div.row div.columns p.date {
-          font-size: 150%; }
-    section#group div.container div.row div.picture {
-      float: right;
-      position: relative;
-      margin-top: -12vh; }
-      section#group div.container div.row div.picture img {
-        width: 100%;
-        height: auto; }
-  section#content div.container div.row div.columns {
-    font-size: 150%; }
-    section#content div.container div.row div.columns img {
-      width: 70%;
-      height: auto; }
-    section#content div.container div.row div.columns p.v_cent {
-      margin-top: 10vh; }
-  section#fancy {
-    background: rgba(255, 51, 85, 0.75);
-    color: #fff;
+  height: auto;
+}
+section#game {
+  margin-top: 10vh;
+  text-align: center;
+}
+section#group {
+  height: 70vh;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+section#group div.container div.row div.columns {
+  padding-top: 1%;
+  position: absolute;
+  margin: auto;
+  top: 30vh;
+  left: 0;
+  color: #000;
+}
+section#group div.container div.row div.columns h3 {
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+section#group div.container div.row div.columns p {
+  margin-top: 0;
+  color: #aaa;
+  font-size: 120%;
+}
+section#group div.container div.row div.columns p.date {
+  font-size: 150%;
+}
+section#group div.container div.row div.picture {
+  float: right;
+  position: relative;
+  margin-top: -8vh;
+}
+section#group div.container div.row div.picture img {
+  width: 100%;
+  height: auto;
+}
+section#content div.container div.row div.columns {
+  font-size: 150%;
+}
+section#content div.container div.row div.columns img {
+  width: 70%;
+  height: auto;
+}
+section#content div.container div.row div.columns p.v_cent {
+  margin-top: 10vh;
+}
+@media only screen and (max-width: 550px) {
+  section#content div.container div.row div.columns.img {
     text-align: center;
-    padding: 5% 0; }
-    section#fancy div.row {
-      margin: 0 auto; }
-      section#fancy div.row div.columns {
-        margin-left: 1%;
-        padding-right: 1%; }
-        section#fancy div.row div.columns h4 {
-          font-weight: 300; }
-      section#fancy div.row div.first {
-        margin-left: 4%;
-        border-right: 1px solid #fff; }
-      section#fancy div.row div.fix {
-        border-right: 1px solid #fff; }
-  section#feedback {
-    background: #ededed; }
-    section#feedback div.container div.row {
-      margin: 10px auto; }
-      section#feedback div.container div.row div.columns blockquote {
-        font-size: 1.4em;
-        width: 80%;
-        margin: 0 auto;
-        font-family: Open Sans;
-        font-style: italic;
-        color: #555555;
-        padding: 1.2em 30px 1.5em 75px;
-        border-left: 8px solid #d63550d9;
-        line-height: 1.6;
-        position: relative;
-        background: #f7f7f7;
-        height: auto; }
-        section#feedback div.container div.row div.columns blockquote::before {
-          font-family: Arial;
-          content: "“";
-          color: #d63550d9;
-          font-size: 4em;
-          position: absolute;
-          left: 10px;
-          top: -10px; }
-        section#feedback div.container div.row div.columns blockquote span {
-          color: #333333;
-          font-style: normal;
-          font-weight: bold;
-          margin-top: 1.5em;
-          float: right; }
-  section.slideshow {
-    margin: 6vh 0; }
+  }
+}
+section#fancy {
+  background: rgba(255, 51, 85, 0.75);
+  color: #fff;
+  text-align: center;
+  padding: 5% 0;
+}
+section#fancy div.row {
+  margin: 0 auto;
+}
+section#fancy div.row div.columns {
+  margin-left: 1%;
+  padding-right: 1%;
+}
+section#fancy div.row div.columns h4 {
+  font-weight: 300;
+}
+@media only screen and (min-width: 550px) {
+  section#fancy div.row div.first {
+    margin-left: 4%;
+    border-right: 1px solid #fff;
+  }
+}
+section#fancy div.row div.first {
+  border-right: 1px solid #fff;
+}
+section#fancy div.row div.fix {
+  border-right: 1px solid #fff;
+}
+section#feedback {
+  background: #ededed;
+  padding: 2rem 0;
+}
+section#feedback div.container div.row {
+  margin: 10px auto;
+  padding: 2rem 0;
+}
+section#feedback div.container div.row div.columns blockquote {
+  font-size: 1.4em;
+  width: 95%;
+  margin: 0 auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.5em 75px;
+  border-left: 8px solid #d63550d9;
+  line-height: 1.6;
+  position: relative;
+  background: #f7f7f7;
+  height: auto;
+}
+section#feedback div.container div.row div.columns blockquote::before {
+  font-family: Arial;
+  content: "“";
+  color: #d63550d9;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+section#feedback div.container div.row div.columns blockquote span {
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1.5em;
+  float: right;
+}
+section.slideshow {
+  margin: 6vh 0;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .mySlides {
-  display: none; }
+  margin: 0 auto !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
 
-img {
-  vertical-align: middle; }
+.mySlides img {
+  vertical-align: middle;
+  width: 100%;
+  height: 45vw;
+  object-fit: cover;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 80%;
+  max-width: 80vw;
+  margin: 0 auto;
+  height: 45vw;
   position: relative;
-  margin: auto; }
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -117,20 +182,22 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  margin: -22px 35px;
+  margin: -22px 50px;
   color: #fff;
-  opacity: 0.8;
   font-weight: bold;
   font-size: 42px;
   transition: 1.6s ease;
-  border-radius: 1000px; }
+  border-radius: 1000px;
+}
 
 /* Position the "next button" to the right */
 .next {
-  right: 0; }
+  right: 0;
+}
 
-.active, .dot:hover {
-  background-color: #717171; }
+.dot.active, .dot:hover {
+  background-color: #999;
+}
 
 /* Caption text */
 .text {
@@ -140,7 +207,8 @@ img {
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -148,7 +216,8 @@ img {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0; }
+  top: 0;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -160,7 +229,8 @@ img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  background-color: #717171; }
+  background-color: #717171;
+}
 
 /* Fading animation */
 .fade {
@@ -168,21 +238,30 @@ img {
   -webkit-animation-duration: 2.5s;
   animation-name: fade;
   animation-duration: 2.5s;
-  text-align: center; }
+  text-align: center;
+}
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
-    font-size: 11px; } }
+    font-size: 11px;
+  }
+}
 
 /*# sourceMappingURL=workshop.css.map */
