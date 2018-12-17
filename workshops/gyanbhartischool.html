@@ -61,7 +61,7 @@
 
 				<div class="six columns picture">
 
-					<img src="/img/GBS2.jpg" style="height: 250px; width: 450px;">
+					<img src="/img/GBS2.JPG" style="height: 250px; width: 450px; object-fit: cover; object-position: center bottom">
 
 				</div>
 
@@ -134,11 +134,12 @@
 
 	</section>
 
-	<section class="slideshow" style="width: 80%;">
+	<section class="slideshow">
 
 		<div class="container">
 			
 			<h2>Gallery</h2>
+			<br><br>
 
 		</div>
 	
@@ -146,27 +147,27 @@
 
 		<div class="mySlides">
 		  <div class="numbertext">1 / 5</div>
-		  <img src="/img/GBS1.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/GBS1.JPG">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">2 / 5</div>
-		  <img src="/img/GBS2.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/GBS2.JPG">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">3 / 5</div>
-		  <img src="/img/GBS3.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/GBS3.jpg">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">4 / 5</div>
-		  <img src="/img/GBS4.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/GBS4.jpg">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">5 / 5</div>
-		  <img src="/img/GBS5.jpg" style="height: 70vh; width: 100%;">
+		  <img src="/img/GBS5.jpg">
 		</div>
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -175,7 +176,7 @@
 		</div>
 		<br>
 
-		<div style="text-align:center; margin-left: 20%;">
+		<div style="text-align:center;">
 		  <span class="dot" onclick="currentSlide(1)"></span> 
 		  <span class="dot" onclick="currentSlide(2)"></span> 
 		  <span class="dot" onclick="currentSlide(3)"></span> 
@@ -204,49 +205,7 @@
 		</div>
 	</footer>
 
-	<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-
-  var myIndex = 0;
-/*carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-}*/
-}
-</script>
+	<script src="/javascripts/slideshow.js"></script>
 
 </body>
 </html>
