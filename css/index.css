@@ -123,16 +123,14 @@ a {
 }
 
 a.button {
-  color: #EE2761;
   padding: 0.66rem 1.75rem;
-  border: 1px solid;
-  border-color: #EE2761;
+  color: white;
+  background: #ff516e;
   margin: 1.25rem 0.25rem 0.25rem;
   display: inline-block;
   border-radius: 0.25rem;
 }
 a.button:hover, a.button.highlight {
-  color: white;
   background: #EE2761;
   transition: all 0.1s ease-in-out;
 }
