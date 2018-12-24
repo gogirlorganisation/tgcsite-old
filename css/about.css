@@ -10,7 +10,7 @@ section.description {
 section.timeline {
   background: #ff115199;
   color: white;
-  padding-bottom: 6em;
+  padding: 10em 0;
 }
 section.cards {
   background: #fafafa;
