@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GBS &middot The Girl Code</title>
+	<title>Oakridge &middot The Girl Code</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 	<meta name="viewport" content="width=device-width">
@@ -61,7 +61,7 @@
 
 				<div class="six columns picture">
 
-					<img src="/img/GBS2.jpg" style="height: 250px; width: 450px;">
+				  <img src="/img/workshops/oakridge/oak0.jpg">
 
 				</div>
 
@@ -121,14 +121,15 @@
 
 	</section>
 
-	<section class="slideshow" style="width: 80%;">
+	<section class="slideshow">
 
 		<div class="container">
 
 			<div class="container">
 			
 				<h2>Gallery</h2>
-
+				<br><br>
+				
 			</div>
 
 		</div>
@@ -137,27 +138,27 @@
 
 		<div class="mySlides">
 		  <div class="numbertext">1 / 5</div>
-		  <img src="/img/GBS1.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/workshops/oakridge/oak1.jpg">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">2 / 5</div>
-		  <img src="/img/GBS2.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/workshops/oakridge/oak2.jpg">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">3 / 5</div>
-		  <img src="/img/GBS3.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/workshops/oakridge/oak3.jpg">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">4 / 5</div>
-		  <img src="/img/GBS4.JPG" style="height: 70vh; width: 100%;">
+		  <img src="/img/workshops/oakridge/oak4.jpg">
 		</div>
 
 		<div class="mySlides">
 		  <div class="numbertext">5 / 5</div>
-		  <img src="/img/GBS5.jpg" style="height: 70vh; width: 100%;">
+		  <img src="/img/workshops/oakridge/oak5.jpg">
 		</div>
 
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -166,39 +167,12 @@
 		</div>
 		<br>
 
-		<div style="text-align:center; margin-left: 20%;">
+		<div style="text-align:center;">
 		  <span class="dot" onclick="currentSlide(1)"></span> 
 		  <span class="dot" onclick="currentSlide(2)"></span> 
 		  <span class="dot" onclick="currentSlide(3)"></span> 
 		  <span class="dot" onclick="currentSlide(4)"></span> 
 		  <span class="dot" onclick="currentSlide(5)"></span> 
-		</div>
-
-	</section>
-
-	<section id="feedback">
-	
-		<div class="container">
-
-			<div class="row">
-				
-				<div class="six columns">
-
-					<blockquote>
-						The workshop was thoroughly planned with informative lessons. Being taught Python allowed me to learn the language and acquire knowledge on its real-life applications.
-					</blockquote>
-
-				</div>
-
-				<div class="six columns">
-
-					<blockquote>
-						Learning the language has opened up a new potential career path for me and I look forward to learning more in the field of computer science.
-					</blockquote>
-				</div>
-
-			</div>
-
 		</div>
 
 	</section>
@@ -222,49 +196,7 @@
 		</div>
 	</footer>
 
-	<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-
-  var myIndex = 0;
-/*carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-}*/
-}
-</script>
+	<script src="/javascripts/slideshow.js"></script>
 
 </body>
 </html>
