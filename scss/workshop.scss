@@ -35,8 +35,7 @@ section {
 	}
 
 	&#group {
-		height: 70vh;
-		margin: 0;
+		margin: 8rem 0 0 0;
 		position: relative;
 		border-bottom: 1px solid #ddd;
 
@@ -44,13 +43,12 @@ section {
 
 			div.row {
 
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
 				div.columns {
-					
-					padding-top: 1%;
-				    position: absolute;
 					margin: auto;
-					top: 30vh;
-					left: 0;
 					color: #000;
 
 					h3 {
@@ -62,6 +60,8 @@ section {
 					p {
 						&.date {
 							font-size: 150%;
+							margin-top: 1rem;
+							margin-left: 0.125rem;
 						}
 						margin-top: 0;
 						color: #aaa;

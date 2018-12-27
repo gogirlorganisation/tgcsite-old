@@ -28,17 +28,17 @@ section#game {
   text-align: center;
 }
 section#group {
-  height: 70vh;
-  margin: 0;
+  margin: 8rem 0 0 0;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
+section#group div.container div.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 section#group div.container div.row div.columns {
-  padding-top: 1%;
-  position: absolute;
   margin: auto;
-  top: 30vh;
-  left: 0;
   color: #000;
 }
 section#group div.container div.row div.columns h3 {
@@ -52,6 +52,8 @@ section#group div.container div.row div.columns p {
 }
 section#group div.container div.row div.columns p.date {
   font-size: 150%;
+  margin-top: 1rem;
+  margin-left: 0.125rem;
 }
 section#group div.container div.row div.picture {
   float: right;

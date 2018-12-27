@@ -28,17 +28,14 @@ section#game {
   text-align: center;
 }
 section#group {
-  height: 70vh;
+  margin-top: 8rem;
   margin: 0;
   position: relative;
   border-bottom: 1px solid #ddd;
 }
 section#group div.container div.row div.columns {
   padding-top: 1%;
-  position: absolute;
   margin: auto;
-  top: 30vh;
-  left: 0;
   color: #000;
 }
 section#group div.container div.row div.columns h3 {
