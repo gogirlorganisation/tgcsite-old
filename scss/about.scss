@@ -366,6 +366,59 @@ article img {
   }
 }
 
+#chapters {
+  padding: 3rem 0;
+
+  h2 {
+    font-size: 2.2rem;
+    margin: 3rem 0 0 0;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: -0.025rem;
+  }
+
+  p {
+    max-width: 50rem; 
+    margin: 1rem auto;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  p a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #f37;
+      border-bottom-color: rgba(#f37, 0.2);
+    }
+  }
+
+  .chapter-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a.chapter-member {
+      width: 12rem;
+      display: block;
+      float: none;
+      box-sizing: border-box;
+    }
+  }
+
+  img {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
 article.card.column-6.table {
     box-sizing: border-box;
     align-self: stretch;
