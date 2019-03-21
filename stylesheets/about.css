@@ -5,10 +5,12 @@ section.description {
   background: white;
   padding: 10rem 0 5rem;
   border-bottom: 2px solid #eee; }
+
 section.timeline {
   background: #ff115199;
   color: white;
   padding: 10em 0; }
+
 section.cards {
   background: #fafafa; }
 
@@ -17,24 +19,25 @@ section.cards {
     border-radius: 50%;
     margin-top: 0 !important;
     margin-left: 0 !important; }
-
   .desc-box.column-4 {
     width: 100% !important; }
   .desc-box:first-of-type {
     margin-left: 0 !important; }
   .desc-box:last-of-type {
     margin-right: 0 !important; }
-
   .big-quote blockquote {
     font-size: 1.5rem !important; }
   .big-quote cite {
     font-size: 1rem !important; } }
+
 .big-quote blockquote {
   font-size: 2.6rem;
   font-weight: lighter;
   text-align: center; }
+
 .big-quote .big-quote {
   padding: 0 5rem 3rem 5rem; }
+
 .big-quote cite {
   display: block;
   text-align: right;
@@ -52,13 +55,17 @@ section.cards {
   padding-bottom: 1.5rem;
   font-weight: normal;
   text-align: center; }
+
 .desc-box p {
   line-height: 1.5; }
+
 .desc-box.column-4 {
   width: 28.333%;
   margin: 0 1.5%; }
+
 .desc-box:first-of-type {
   margin-left: 3%; }
+
 .desc-box:last-of-type {
   margin-right: 3%; }
 
@@ -216,42 +223,31 @@ img {
   .container {
     width: 100%;
     max-width: 80em; }
-
   .column-1 {
     width: 8.33333%; }
-
   .column-2 {
     width: 16.66667%; }
-
   .column-3 {
     width: 25%; }
-
   .column-4 {
     width: 33.33333%; }
-
   .column-5 {
     width: 41.66667%; }
-
   .column-6 {
     width: 50%; }
-
   .column-7 {
     width: 58.33333%; }
-
   .column-8 {
     width: 66.66667%; }
-
   .column-9 {
     width: 75%; }
-
   .column-10 {
     width: 83.33333%; }
-
   .column-11 {
     width: 91.66667%; }
-
   .column-12 {
     width: 100%; } }
+
 .center {
   text-align: center; }
 
@@ -268,9 +264,11 @@ article img {
   margin-bottom: 0 !important;
   font-size: 1.5em;
   font-weight: 600 !important; }
+
 .card-content span {
   color: #bbb;
   font-weight: 400; }
+
 .card-content p {
   margin-top: 1.5em !important; }
 
@@ -329,26 +327,21 @@ article.card.column-6.table {
     padding: 0;
     max-width: 25rem;
     margin: auto; }
-
   .timeline-items-container:before {
     height: 100%;
     width: 1px;
     left: 0; }
-
   .timeline-item {
     text-align: left;
     padding: 3.5rem 0 2rem 3.5rem !important;
     justify-content: flex-start !important; }
-
   .timeline-item:nth-child(even) {
     align-self: flex-start; }
-
   .timeline-item:before {
     top: 0 !important;
     bottom: 0 !important;
     left: -0.375rem;
     right: auto; }
-
   .timeline-item:after {
     top: 0;
     bottom: 0;
@@ -356,5 +349,3 @@ article.card.column-6.table {
     right: auto;
     width: 2rem;
     height: 1px; } }
-
-/*# sourceMappingURL=about.css.map */

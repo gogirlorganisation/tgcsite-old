@@ -103,26 +103,20 @@ img {
   .container {
     width: 95%;
     max-width: 70em; }
-
   .column-4 {
     width: 33.33333%; } }
+
 @media only screen and (max-width: 1023px) {
   .workshops article.card {
     max-width: 30rem;
     margin: auto;
     float: none; }
-
   .workshops article.card a {
     display: block;
     width: 100%; }
-
   .workshops article.card img {
     width: 100%; }
-
   .workshops article.card h3 {
     font-size: 1.5rem; }
-
   .workshops article.card .date {
     font-size: 1.1rem; } }
-
-/*# sourceMappingURL=workshops.css.map */

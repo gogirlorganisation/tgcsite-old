@@ -197,11 +197,14 @@ a.button {
 
 .text-container h1 {
   font-size: 2.8rem; }
+
 .text-container .wrapper {
   width: 100%; }
+
 .text-container .line {
   margin-left: 0;
   margin-bottom: 2rem; }
+
 .text-container .block p {
   font-size: 1.1rem;
   line-height: 1.6; }
@@ -279,44 +282,37 @@ section.what-we-do {
   .page-title {
     font-size: 3rem !important;
     line-height: 1.4; }
-
   .hero-copy {
     position: absolute !important;
     bottom: 15rem !important; }
-
   ul.social {
     display: none; }
-
   div.hero-copy {
     padding: 0; }
     div.hero-copy .hero-copy-content h1 {
       font-size: 2.5rem !important; }
       div.hero-copy .hero-copy-content h1 span {
         display: none; } }
+
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .page-title {
     font-size: 3.0625rem;
     line-height: 1.4;
     margin: 1rem 0 0 !important; } }
+
 @media (max-width: 1024px) {
   .submenu.visible {
     right: 0; }
-
   header > div nav a {
     padding: 0 1rem;
     font-size: 0.8rem; }
-
   header > div .logo img {
     height: 1.5rem;
     margin-top: 1.75rem; }
-
   .two-cols > div {
     padding-left: 1rem !important;
     padding-right: 1rem !important; }
-
   .text-container h1 {
     font-size: 2.2rem;
     margin-top: 3rem; } }
-
-/*# sourceMappingURL=index.css.map */
