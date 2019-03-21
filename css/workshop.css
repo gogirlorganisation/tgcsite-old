@@ -180,6 +180,10 @@ section {
   position: absolute;
   top: 0; }
 
+p {
+  text-align: justify;
+}
+
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
