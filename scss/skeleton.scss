@@ -196,11 +196,12 @@ body {
     font-smoothing: antialiased;
     display: table;
 }
-
+// Okay, this could quite possibly be the most autistic thing I've ever witnessed. There are certain stylesheets
+// in use from the 'css' directory and some stylesheets in use from the 'stylesheets' directory. Wtaf...
 header {
     margin: 0 auto;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     align-content: center;
     background: #ffffffc7;
     width: 100%;
