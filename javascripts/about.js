@@ -9,7 +9,7 @@ $('.show-submenu').on('mouseleave', function() {
 		if(!stay)
 			$('.submenu').removeClass('visible');
 	});
-});
+}); //jkejk
 
 $('.submenu').on('mouseenter', function() {
 	stay = true;
