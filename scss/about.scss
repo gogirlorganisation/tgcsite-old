@@ -2,6 +2,12 @@ html, body {
   width: 100%;
 }
 
+#chapters {
+  text-align: justify;
+}
+
+// justify text pls, looks awful otherwise, especially when the text is in the centre of the page yo.
+
 section {
   &.description {
     background: white;
@@ -382,7 +388,7 @@ article img {
   }
 
   p {
-    max-width: 50rem; 
+    max-width: 50rem;
     margin: 1rem auto;
     line-height: 1.5;
     font-size: 1.1rem;
