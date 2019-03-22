@@ -1,6 +1,9 @@
 html, body {
   width: 100%; }
 
+#chapters {
+  text-align: justify; }
+
 section.description {
   background: white;
   padding: 10rem 0 5rem;
