@@ -1,13 +1,7 @@
 html, body {
   width: 100%;
 }
-
-#chapters {
-  text-align: justify;
-}
-
-// justify text pls, looks awful otherwise, especially when the text is in the centre of the page yo.
-
+//RAND
 section {
   &.description {
     background: white;
@@ -392,7 +386,7 @@ article img {
     margin: 1rem auto;
     line-height: 1.5;
     font-size: 1.1rem;
-    text-align: left;
+    text-align: center;
   }
 
   p a {

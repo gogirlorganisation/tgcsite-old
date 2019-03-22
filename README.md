@@ -4,7 +4,7 @@ Note on editing the css: Please don't edit the css files directly in the 'css' o
 directories. Don't ask me why there are 2 directories with .css files, there just are. Don't use VScode as your text editor if you plan on compiling .scss, there are some strange unresolved VScode node bugs, it won't compile. Use literally anything else, even notepad works. Thanks.
 
 To make your life easier: 1. Install node.js from https://nodejs.org/en/.
-                          2. Initalise NPM using the command 'npm init'.
+                          2. Initialise NPM using the command 'npm init'.
                           3. Install Node-Sass using the command 'npm install node-sass'.
                           4. Run watch scss command using 'node-sass --watch scss -o css'
                           5. Compile scss to not only the css folder but also the stylesheets folder.
