@@ -123,9 +123,9 @@ section {
 		div.row {
 
 			margin: 0 auto;
-			
+
 			div.columns {
-				
+
 				margin-left: 1%;
 				padding-right: 1%;
 				h4 {
@@ -163,9 +163,9 @@ section {
 
 				margin: 10px auto;
 				padding: 2rem 0;
-				
+
 				div.columns {
-					
+
 					blockquote {
 						font-size: 1.4em;
 					    width: 95%;
@@ -301,16 +301,21 @@ section {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+#cntr {
+	text-align: center;
+	padding-top: 20;
 }

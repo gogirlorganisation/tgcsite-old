@@ -37,6 +37,10 @@ img {
   transform: scale(1.05);
 }
 
+// h2 {
+//   text-align: center !important;
+// }
+
 .workshops article.card .workshop-info {
   position: absolute;
   top: 0;
@@ -54,8 +58,11 @@ img {
   box-sizing: border-box;
 }
 
+//scss ugfg
+
 .workshops article.card a {
   box-shadow: none;
+  overflow: hidden;
 }
 
 .workshops article.card a:hover {

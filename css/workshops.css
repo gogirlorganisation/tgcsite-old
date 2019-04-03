@@ -47,7 +47,8 @@ img {
   box-sizing: border-box; }
 
 .workshops article.card a {
-  box-shadow: none; }
+  box-shadow: none;
+  overflow: hidden; }
 
 .workshops article.card a:hover {
   transform: none; }
