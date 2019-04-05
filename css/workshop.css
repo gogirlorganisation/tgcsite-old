@@ -220,3 +220,10 @@ section {
 #cntr {
   text-align: center;
   padding-top: 20; }
+
+#oises-pic {
+  /* height: 80%; */
+  width: 89% !important; }
+
+.twelve.columns {
+  text-align: justify; }
