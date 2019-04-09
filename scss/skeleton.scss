@@ -300,7 +300,7 @@ footer {
 
     .do {
         img {
-            width: 70%;
+            width: 90%;
             height: auto;
             padding: 0;
         }
@@ -347,6 +347,28 @@ div {
         }
     }
 }
+
+#social {
+  width: 4.5%;
+  display: inline-flex;
+  /* margin-top: 30px; */
+  padding-right: 10px;
+  transition: opacity 0.3s;
+}
+
+#social:hover{
+  opacity: 0.6;
+}
+
+#goshdarn {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+#alignmboi {
+  margin-top: 10px;
+  display: inline;
+  position: relative; top:7px;   }
 
 
 @media (min-width: 550px) {
